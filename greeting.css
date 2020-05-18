@@ -1,0 +1,48 @@
+.greetings {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(231, 251, 255);
+  text-shadow: 1px 1px 1px gray;
+  font-size: 20px;
+}
+
+@keyframes upAndDown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.js-form {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(231, 251, 255);
+}
+
+.js-form > input {
+  height: 20px;
+  width: 150px;
+  border-radius: 10px;
+  border: 0px;
+  text-align: center;
+  outline: none;
+  transition: ease-in-out 0.3s;
+  animation: upAndDown 2s ease-in-out infinite;
+}
+
+.js-form > input:focus {
+  font-size: 18px;
+  height: 24px;
+  width: 200px;
+  box-shadow: 1px 1px 5px black;
+  animation: none;
+}
